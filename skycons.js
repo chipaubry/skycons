@@ -139,7 +139,7 @@
   /* FIXME: I'm *really really* sorry that this code is so gross. Really, I am.
    * I'll try to clean it up eventually! Promise! */
   var KEYFRAME = 500,
-      STROKE = 0.08,
+      STROKE = 0.035,
       TAU = 2.0 * Math.PI,
       TWO_OVER_SQRT_2 = 2.0 / Math.sqrt(2);
 
@@ -180,10 +180,10 @@
   function cloud(ctx, t, cx, cy, cw, s, color) {
     t /= 30000;
 
-    var a = cw * 0.21,
+    var a = cw * 0.18,
         b = cw * 0.12,
         c = cw * 0.24,
-        d = cw * 0.28;
+        d = cw * 0.20;
 
     ctx.fillStyle = color;
     puffs(ctx, t, cx, cy, a, b, c, d);
